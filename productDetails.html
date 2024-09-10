@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Product Details || Haldiram Nagpur</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="global.css">
+    </head>
+    <body>
+        <header class="sticky top-0 left-0 right-0 z-50 mb-4 bg-white">
+            <!-- heading title -->
+            <div class="w-full bg-[#FAC44B] h-7">
+                <div
+                    class="w-[90%] mx-auto flex gap-3 h-full items-center justify-between">
+                    <div class="w-[75%]">
+                        <marquee class="font-bold">Delivering PAN India & Free
+                            Shipping across India on Orders above ₹500 | <span
+                                class="font-normal"> Estimated
+                                Standard Delivery Timeline of 3-5 Working Days,
+                                Though
+                                Delivery Time May Vary Depending On Pin Code
+                                CAUTION
+                                -
+                                Beware of Friday</span></marquee>
+                    </div>
+                    <div
+                        class="flex items-center justify-end gap-5 h-full ">
+                        <button
+                            class="bg-[#EA2006] h-full text-white px-5 rounded-full">Track
+                            order</button>
+                        <button
+                            class="bg-[#EA2006] h-full text-white px-5 rounded-full">E-coupons</button>
+                    </div>
+                </div>
+            </div>
+            <!-- headin image and searchbar -->
+            <div
+                class="flex items-center justify-between w-[90%] mx-auto py-1">
+                <div class="flex items-center bg-[#F7F7F7] pl-5">
+                    <input type="text" placeholder="search here...."
+                        class="outline-none bg-[#F7F7F7]">
+                    <button class="bg-red-600 py-2 px-3"><img class="w-7 h-7"
+                            src="image/search.svg"
+                            alt></button>
+                </div>
+                <a href="/"><img src="image/logo.svg" alt></a>
+                <div class="flex items-center gap-4">
+                    <a href="/login.html"><img class="w-8 h-8"
+                            src="image/person.svg" alt></a>
+                    <img class="w-8 h-8" src="image/love.svg" alt>
+                    <img class="w-8 h-8" src="image/shop.svg" alt>
+                </div>
+            </div>
+            <!-- navbar -->
+            <nav
+                class="w-full bg-[#FAC44B]   uppercase text-base">
+                <div class="flex items-center h-9 py-2 w-[90%] gap-10 mx-auto">
+
+                    <a href="/ganeshSpacial.html">Ganesha Special</a>
+                    <a href="/">Gifting</a>
+                    <a href="/">Sweets</a>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div
+                class="w-[90%] mx-auto text-sm text-gray-900 antialiased">
+                <ol class="list-none  rounded flex flex-wrap">
+                    <li class="flex">
+                        <a href="/index.html"
+                            class="no-underline"
+                            title="Go to Home Page">Home</a>
+                    </li>
+                    <li class="item flex product">
+                        <span aria-hidden="true"
+                            class="separator  px-2">/</span>
+                        <a href="#" class="font-medium break-words"
+                            aria-current="page">Kaju Modak</a>
+                    </li>
+                </ol>
+            </div>
+            <!-- card details -->
+            <section class="text-gray-700 w-[90%] mx-auto">
+                <div class="flex flex-wrap items-start order-first w-full">
+
+                    <div
+                        class="container order-1 w-full lg:w-1/2 md:h-auto border-r lg:mb-8">
+                        <div>
+
+                            <div class="relative self-center w-full"
+                                x-transition:enter="ease-out duration-500"
+                                x-transition:enter-start="opacity-0"
+                                x-transition:enter-end="opacity-100">
+                                <div class="relative mb-6">
+                                    <img alt="main product photo"
+                                        title="Kesar Modak"
+                                        class="object-contain object-center w-full h-auto max-h-screen-75 opacity-0"
+                                        src="https://www.haldirams.com/media/catalog/product/cache/71134970afb779eb7860339989626b7e/h/a/haldiram_modak_kesar_215_1.jpg"
+                                        width="700" height="700"
+                                        itemprop="image">
+                                    <template
+                                        x-for="(image, index) in images"
+                                        :key="index">
+                                        <img
+                                            :alt="image.caption || 'Kesar\u0020Modak'"
+                                            :title="image.caption || 'Kesar\u0020Modak'"
+                                            @click="fullscreen = true; $nextTick(() => calcPageSize())"
+                                            class="absolute inset-0 object-contain object-center w-full m-auto max-h-screen-75"
+                                            :class="{ 'cursor-pointer': !fullscreen }"
+                                            width="700" height="700"
+                                            :loading="active!==index ? 'lazy' : 'eager'"
+                                            :src="fullscreen ? image.full : image.img"
+                                            x-transition.opacity.duration.500ms
+                                            x-show="active===index">
+                                    </template><img
+                                        class="absolute inset-0 object-contain object-center w-full m-auto max-h-screen-75 cursor-pointer"
+                                        src="https://www.haldirams.com/media/catalog/product/cache/71134970afb779eb7860339989626b7e/h/a/haldiram_modak_kesar_215_1.jpg"><img><img
+                                        class="absolute inset-0 object-contain object-center w-full m-auto max-h-screen-75 cursor-pointer"
+                                        src="https://www.haldirams.com/media/catalog/product/cache/71134970afb779eb7860339989626b7e/h/a/haldiram_modak_kesar_215.jpg">
+
+                                </div>
+                            </div>
+                            <div>
+                                <div id="thumbs" class="flex items-center">
+
+                                    <div
+                                        class="  relative flex flex-nowrap w-full overflow-auto transition-all js_slides snap md:px-1 xl:px-2">
+                                        <div
+                                            class=" flex shrink-0 mb-2 mr-2 lg:mr-4 last:mr-0">
+                                            <a href="#"
+                                                class="block border border-gray-300 hover:border-primary focus:border-primary">
+                                                <img
+                                                    width="90" height="90"
+                                                    src="https://www.haldirams.com/media/catalog/product/cache/e0392981db38e83aeeb6f15398e039f9/h/a/haldiram_modak_kesar_215_1.jpg"
+                                                    alt="Kesar Modak"
+                                                    title="Kesar Modak">
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="container order-2 w-full mb-6 md:pl-5 md:py-6 md:mb-0 lg:pl-10 lg:w-1/2">
+
+                        <div class="flex justify-between items-start">
+                            <h1
+                                class="inline text-2xl  font-bold text-chinese-black break-word md:font-medium">
+                                Kesar Modak </h1>
+
+                            <!-- Wishlist -->
+                            <button x-data="initWishlist()"
+                                class="h-full mr-2 inline-flex shrink-0 items-center justify-center text-gray-500 md:mr-0">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 24 24"
+                                    stroke-width="2" stroke="currentColor"
+                                    class="text-black path-stroke"
+                                    width="32" height="32" role="img">
+                                    <path stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                                    <title>heart</title></svg>
+                            </button>
+                        </div>
+
+                        <div
+                            class="my-2 flex border-b  gap-5 pb-2 items-center">
+                            <div
+                                class="text-right text-black font-semibold sm:font-normal mr-8to16">
+                                <p
+                                    class="flex items-center justify-end align-middle available gap-x-2 stock text-sm md:text-base"
+                                    title="Availability">
+                                    <span
+                                        class="w-3 h-3 bg-green-500 rounded-full shrink-0 hidden md:inline-block"></span>
+                                    <span class="text-green-500">In
+                                        stock</span>
+                                </p>
+                            </div>
+                            <div class="rating-summary flex cursor-pointer"
+                                title="Be the first to review this product">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="fill-current text-gray-200 w-6 h-6"
+                                    viewBox="3 0 20 20" fill="currentColor">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371
+                                1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54
+                                1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1
+                                1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="fill-current text-gray-200 w-6 h-6"
+                                    viewBox="3 0 20 20" fill="currentColor">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371
+                                1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54
+                                1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1
+                                1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="fill-current text-gray-200 w-6 h-6"
+                                    viewBox="3 0 20 20" fill="currentColor">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371
+                                1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54
+                                1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1
+                                1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="fill-current text-gray-200 w-6 h-6"
+                                    viewBox="3 0 20 20" fill="currentColor">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371
+                                1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54
+                                1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1
+                                1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                    class="fill-current text-gray-200 w-6 h-6"
+                                    viewBox="3 0 20 20" fill="currentColor">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371
+                                1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54
+                                1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1
+                                1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                                </svg>
+                            </div>
+
+                        </div>
+
+                        <div
+                            class=" md:pt-2">
+
+                            <div
+                                class="final-price inline-block py-4 sm:py-1 w-full">
+                                <span
+                                    class="price-label block  invisible"
+                                    :class="{ 'invisible' : !showRegularPriceLabel }">
+                                    As low as:
+                                </span>
+                                <div
+                                    class="price-container flex items-baseline flex-row py-4 w-full justify-start">
+                                    <h6
+                                        class="hidden md:block md:basis-1/4 lg:basis-1/4 xl:basis-1/6">Price</h6>
+                                    <div class="final-price inline-block">
+                                        <span>
+                                            <span
+                                                class=" title-font font-semibold md:font-medium text-2xl">₹185.00</span>
+                                        </span>
+                                        <p class="text-sm">(inclusive of all
+                                            taxes)</p>
+                                    </div>
+                                    <div
+                                        class=" flex md:ml-4">
+                                        <span
+                                            class="text-xl line-through text-gray-400">
+                                            <span class="price">₹220.00</span>
+                                        </span>
+                                    </div>
+                                    <div
+                                        class="bg-yellow-400 text-white rounded-full pt-[3px] pb-0 px-1 ml-4 mb-auto font-bold md:p-1.5 md:pb-1 md:mt-0.5">10%
+                                        Off</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h6 class="hidden mb-2 mt-4 md:block md:mt-6">Quick
+                            Overview</h6>
+                        <div
+                            class="mb-5 leading-relaxed product-description text-sm ">
+                            Inclusive of all taxes </div>
+
+                        <form>
+                            <input type="hidden" name="product"
+                                value="2013">
+                            <input type="hidden"
+                                name="selected_configurable_option" value>
+                            <input type="hidden" name="related_product"
+                                id="related-products-field" value>
+                            <input type="hidden" name="item" value="2013">
+                            <input name="form_key" type="hidden"
+                                value="pIKyw7lhOeVViYJV">
+
+                            <div
+                                class="relative mb-2" x-defer="intersect">
+                                <h2
+                                    class="hidden mb-4 text-xl font-medium text-gray-900 title-font">
+                                    Product Options: </h2>
+                                <div>
+                                    <div class="swatch-attribute
+                                    pack_size">
+                                        <template x-if="showSwatches">
+                                            <div
+                                                class="flex flex-row items-center py-1 w-full">
+
+                                                <label
+                                                    class="w-full sm:w-1/2 text-left text-gray-700 label product-option-label md:basis-1/4 lg:basis-1/4 xl:basis-1/6"
+                                                    for="attributepack_size">
+                                                    <span>
+                                                        Pack Size </span>
+                                                </label>
+                                                <div
+                                                    class="w-full sm:w-1/2 text-left text-gray-900 product-option-values">
+                                                    <div
+                                                        class="flex items-center space-x-3 swatch-attribute-options "
+                                                        role="radiogroup">
+                                                        <template>
+
+                                                            <div class>
+                                                                <template>
+                                                                    <label
+                                                                        class="swatch-option relative border-2 shadow-sm cursor-pointer select-none bg-container-lighter product-option-value-label">
+                                                                        <input
+                                                                            type="radio"
+                                                                            class="inline-block absolute p-0 border-0 focus:border-0 focus:ring-0 product-option-value-input"
+                                                                            x-on:focus="focusLabel(item.id)"
+                                                                            x-on:blur="blurLabel()"
+                                                                            x-init="index==0 ? changeOption(283, item.id) : ''"
+                                                                            x-on:change="changeOption(283, $event.target.value)"
+                                                                            x-model="selectedValues[283]"
+                                                                            :required="getAllowedAttributeOptions(283).filter(
+                                                                            attributeOption => selectedValues[attributeOption]
+                                                                        ).length === 0">
+                                                                        <div
+                                                                            class="whitespace-nowrap text-xs"></div>
+                                                                    </label>
+                                                                </template>
+
+                                                                <template>
+                                                                    <div
+                                                                        class="relative border-2 shadow-sm opacity-50 cursor-pointer select-none border-container-darker swatch-option bg-container-lighter"
+                                                                        :class="{'w-6 h-6' : !isTextSwatch(283, item.id),}"
+                                                                        :style="getSwatchBackgroundStyle('283',item.id)">
+                                                                        <div
+                                                                            class="whitespace-nowrap text-xs"></div>
+                                                                        <svg
+                                                                            class="absolute inset-0 w-full h-full text-gray-500 bg-white/25">
+                                                                            <line
+                                                                                x1="0"
+                                                                                y1="100%"
+                                                                                x2="100%"
+                                                                                y2="0"
+                                                                                class="stroke-current stroke-1"></line>
+                                                                        </svg>
+                                                                    </div>
+                                                                </template>
+                                                            </div>
+                                                        </template>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </template><div
+                                            class="flex flex-row items-center py-1 w-full">
+
+                                            <label
+                                                class="w-full sm:w-1/2 text-left text-gray-700 label product-option-label md:basis-1/4 lg:basis-1/4 xl:basis-1/6"
+                                                for="attributepack_size">
+                                                <span>
+                                                    Pack Size </span>
+                                            </label>
+                                            <div
+                                                class="w-full sm:w-1/2 text-left text-gray-900 product-option-values">
+                                                <div
+                                                    class="flex items-center space-x-3 swatch-attribute-options "
+                                                    role="radiogroup">
+                                                    <template
+                                                        x-for="(item, index) in optionConfig.attributes[283].options"
+                                                        :key="item.id">
+
+                                                        <div class>
+                                                            <template>
+                                                                <label
+                                                                    class="swatch-option relative border-2 shadow-sm cursor-pointer select-none bg-container-lighter product-option-value-label"
+                                                                    :class="{
+                        'border-container-lighter ring ring-black/50':
+                            (selectedValues[283] === item.id),
+                        'border-container-darker':
+                            (selectedValues[283] !== item.id),
+                        'w-6 h-6' : !isTextSwatch(283, item.id),
+                        'border-container-lighter ring ring-black/75' : focusedLabel === item.id
+                    }" :style="getSwatchBackgroundStyle('283',item.id)"
+                                                                    @mouseenter.self="activeTooltipItem = {
+                            attribute: '283',
+                            item: item.id
+                        }; tooltipPositionElement = $event.target;"
+                                                                    @mouseleave.self="activeTooltipItem = false">
+                                                                    <input
+                                                                        type="radio"
+                                                                        class="inline-block absolute p-0 border-0 focus:border-0 focus:ring-0 ">
+                                                                    <div
+                                                                        class="whitespace-nowrap text-xs"></div>
+                                                                </label>
+                                                            </template>
+
+                                                            <template>
+                                                                <div
+                                                                    class="relative border-2 shadow-sm opacity-50 cursor-pointer select-none border-container-darker swatch-option bg-container-lighter">
+                                                                    <div
+                                                                        class="whitespace-nowrap text-xs"></div>
+                                                                    <svg
+                                                                        class="absolute inset-0 w-full h-full text-gray-500 bg-white/25">
+                                                                        <line
+                                                                            x1="0"
+                                                                            y1="100%"
+                                                                            x2="100%"
+                                                                            y2="0"
+                                                                            class="stroke-current stroke-1"></line>
+                                                                    </svg>
+                                                                </div>
+                                                            </template>
+                                                        </div>
+                                                    </template><div>
+                                                        <template>
+
+                                                        </template><label
+                                                            class=" relative   cursor-pointe select-none">
+                                                            <button
+                                                                class="border-2 px-4 border-gray-300 text-sm  py-1">189
+                                                                gm</button>
+                                                        </label>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <template>
+                                    <div class="absolute">
+                                        <div class="shadow-lg">
+                                            <div
+                                                class="absolute top-0 left-0 z-10 min-w-20 p-2 -mt-6 text-sm leading-tight text-black
+                            transform translate-x-0.5 -translate-y-full bg-white rounded-lg shadow-lg text-center">
+                                                <template
+                                                    x-if="isVisualSwatch(activeTooltipItem.attribute, activeTooltipItem.item)">
+                                                    <div
+                                                        class="inline-block border shadow-sm border-container"
+                                                        :style="getTooltipImageStyle(activeTooltipItem.attribute, activeTooltipItem.item)"></div>
+                                                </template>
+                                                <span
+                                                    class="mx-2 text-lg font-semibold whitespace-nowrap subtitle"
+                                                    x-html="getTooltipLabel()"></span>
+                                            </div>
+                                            <svg
+                                                class="absolute z-10 w-8 h-8 text-white transform translate-x-1/2
+                            -translate-y-8 fill-current stroke-current"
+                                                width="12" height="12">
+                                                <rect x="12" y="-12"
+                                                    width="12" height="12"
+                                                    transform="rotate(45)"
+                                                    class="shadow-xl"></rect>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </template>
+                            </div>
+
+                            <div class="product-options-wrapper"
+                                id="product-options-wrapper">
+                                <div class="fieldset" tabindex="0">
+
+                                    <h2
+                                        class="text-gray-900 text-xl title-font font-medium mb-4 hidden">
+                                        Customizable Options:
+                                    </h2>
+                                    <div x-data="initOptions()" x-init="
+                    refs = $refs;
+                    $nextTick(() => { calculateOptionPrices(); initSelectedOptions($dispatch); })
+                 " x-bind="eventListeners" class="mb-2" x-defer="intersect">
+                                        <div
+                                            class="flex flex-col py-2 last:mb-0 w-full items-left">
+                                            <label
+                                                class="label text-gray-700 text-left w-full sm:w-1/2"
+                                                for="select_39254">
+                                                <span>Choose Your Gift
+                                                    Packaging</span>
+                                            </label>
+                                            <div
+                                                class="text-gray-900 text-left w-full">
+
+                                                <div
+                                                    class="options-list nested"
+                                                    id="options-39254-list">
+                                                    <div
+                                                        class="field choice">
+                                                        <input type="radio"
+                                                            id="options_39254"
+                                                            class="radio product-custom-option"
+                                                            name="options[39254]"
+                                                            value
+                                                            checked="checked"
+                                                            x-on:change="updateCustomOptionValue(
+                        $dispatch, '39254', $event.target
+                       )">
+                                                        <label
+                                                            class="label text-left"
+                                                            for="options_39254">
+                                                            <span>
+                                                                None </span>
+                                                        </label>
+                                                    </div>
+
+                                                    <div
+                                                        class="field choice">
+                                                        <input type="radio"
+                                                            class="form-radio                       product-custom-option"
+                                                            name="options[39254]"
+                                                            id="options_39254_156667"
+                                                            value="156667"
+                                                            x-ref="option-39254-156667"
+                                                            data-price-amount="10"
+                                                            data-price-type="fixed"
+                                                            data-option-id="39254_156667"
+                                                            x-on:change="updateCustomOptionValue(
+                            $dispatch, '39254_156667', $event.target
+                           )">
+                                                        <label
+                                                            class="label text-left"
+                                                            for="options_39254_156667"
+                                                            x-html="updateOptionPrice('39254_156667', $el)">
+                                                            <span>Standard
+                                                                (Gift
+                                                                Wrapping)</span>
+                                                            <span><span
+                                                                    class="price-notice">+
+
+                                                                    <span
+                                                                        class="price-container text-center tax weee rewards_earn">
+                                                                        <span
+                                                                            data-price-amount="10"
+                                                                            data-price-type
+                                                                            class="price-wrapper ">₹10.00</span>
+                                                                    </span>
+                                                                </span></span>
+                                                        </label>
+                                                    </div>
+
+                                                    <div
+                                                        class="field choice">
+                                                        <input type="radio"
+                                                            class="form-radio                       product-custom-option"
+                                                            name="options[39254]"
+                                                            id="options_39254_156668"
+                                                            value="156668"
+                                                            x-ref="option-39254-156668"
+                                                            data-price-amount="15"
+                                                            data-price-type="fixed"
+                                                            data-option-id="39254_156668"
+                                                            x-on:change="updateCustomOptionValue(
+                            $dispatch, '39254_156668', $event.target
+                           )">
+                                                        <label
+                                                            class="label text-left"
+                                                            for="options_39254_156668"
+                                                            x-html="updateOptionPrice('39254_156668', $el)">
+                                                            <span>Premium
+                                                                (Gift
+                                                                Wrapping
+                                                                with Ribbons
+                                                                &amp; Floral
+                                                                Decor)</span>
+                                                            <span><span
+                                                                    class="price-notice">+
+
+                                                                    <span
+                                                                        class="price-container text-center tax weee rewards_earn">
+                                                                        <span
+                                                                            data-price-amount="15"
+                                                                            data-price-type
+                                                                            class="price-wrapper ">₹15.00</span>
+                                                                    </span>
+                                                                </span></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="flex flex-col py-2 last:mb-0 w-full items-left">
+                                            <label
+                                                class="label text-gray-700 text-left w-full sm:w-1/2"
+                                                for="select_39255">
+                                                <span>Wish to add Pooja
+                                                    Thali?</span>
+                                            </label>
+                                            <div
+                                                class="text-gray-900 text-left w-full">
+
+                                                <div
+                                                    class="options-list nested"
+                                                    id="options-39255-list">
+                                                    <select
+                                                        name="options[39255]"
+                                                        id="options_39255"
+                                                        class="border py-2 px-3"
+                                                        x-ref="option-39255"
+                                                        x-on:change="updateCustomOptionValue(
+                    $dispatch, '39255', $event.currentTarget
+                )">
+                                                        <option value>--
+                                                            Please Select
+                                                            --</option>
+
+                                                        <option
+                                                            type="drop_down"
+                                                            value="156669"
+                                                            x-ref="option-39255-156669"
+                                                            data-price-amount="150"
+                                                            data-price-type="fixed"
+                                                            data-option-id="39255_156669"
+                                                            x-html="'1\u0020Pooja\u0020Thali '
+                            + (getFormattedOptionPrice('39255_156669') || '')
+                                            ">1 Pooja Thali +
+                                                            ₹150.00</option>
+
+                                                        <option
+                                                            type="drop_down"
+                                                            value="156670"
+                                                            x-ref="option-39255-156670"
+                                                            data-price-amount="300"
+                                                            data-price-type="fixed"
+                                                            data-option-id="39255_156670"
+                                                            x-html="'2\u0020Pooja\u0020Thali '
+                            + (getFormattedOptionPrice('39255_156670') || '')
+                                            ">2 Pooja Thali +
+                                                            ₹300.00</option>
+
+                                                        <option
+                                                            type="drop_down"
+                                                            value="156671"
+                                                            x-ref="option-39255-156671"
+                                                            data-price-amount="450"
+                                                            data-price-type="fixed"
+                                                            data-option-id="39255_156671"
+                                                            x-html="'3\u0020Pooja\u0020Thali '
+                            + (getFormattedOptionPrice('39255_156671') || '')
+                                            ">3 Pooja Thali +
+                                                            ₹450.00</option>
+
+                                                        <option
+                                                            type="drop_down"
+                                                            value="156672"
+                                                            x-ref="option-39255-156672"
+                                                            data-price-amount="600"
+                                                            data-price-type="fixed"
+                                                            data-option-id="39255_156672"
+                                                            x-html="'4\u0020Pooja\u0020Thali '
+                            + (getFormattedOptionPrice('39255_156672') || '')
+                                            ">4 Pooja Thali +
+                                                            ₹600.00</option>
+
+                                                        <option
+                                                            type="drop_down"
+                                                            value="156673"
+                                                            x-ref="option-39255-156673"
+                                                            data-price-amount="750"
+                                                            data-price-type="fixed"
+                                                            data-option-id="39255_156673"
+                                                            x-html="'5\u0020Pooja\u0020Thali '
+                            + (getFormattedOptionPrice('39255_156673') || '')
+                                            ">5 Pooja Thali +
+                                                            ₹750.00</option>
+
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="flex flex-col py-2 last:mb-0 w-full items-left">
+                                            <label
+                                                class="label text-gray-700 text-left w-full sm:w-1/2"
+                                                for="select_39256">
+                                                <span>Wish to add Key Chain
+                                                    ?</span>
+                                            </label>
+                                            <div
+                                                class="text-gray-900 text-left w-full">
+
+                                                <div
+                                                    class="options-list nested"
+                                                    id="options-39256-list">
+                                                    <select
+                                                        name="options[39256]"
+                                                        id="options_39256"
+                                                        class="border py-2 px-3"
+                                                        x-ref="option-39256"
+                                                        x-on:change="updateCustomOptionValue(
+                    $dispatch, '39256', $event.currentTarget
+                )">
+                                                        <option value>--
+                                                            Please Select
+                                                            --</option>
+
+                                                        <option
+                                                            type="drop_down"
+                                                            value="156674"
+                                                            x-ref="option-39256-156674"
+                                                            data-price-amount="100"
+                                                            data-price-type="fixed"
+                                                            data-option-id="39256_156674"
+                                                            x-html="'1\u0020Key\u0020Chain '
+                            + (getFormattedOptionPrice('39256_156674') || '')
+                                            ">1 Key Chain + ₹100.00</option>
+
+                                                        <option
+                                                            type="drop_down"
+                                                            value="156675"
+                                                            x-ref="option-39256-156675"
+                                                            data-price-amount="200"
+                                                            data-price-type="fixed"
+                                                            data-option-id="39256_156675"
+                                                            x-html="'2\u0020Key\u0020Chain '
+                            + (getFormattedOptionPrice('39256_156675') || '')
+                                            ">2 Key Chain + ₹200.00</option>
+
+                                                        <option
+                                                            type="drop_down"
+                                                            value="156676"
+                                                            x-ref="option-39256-156676"
+                                                            data-price-amount="300"
+                                                            data-price-type="fixed"
+                                                            data-option-id="39256_156676"
+                                                            x-html="'3\u0020Key\u0020Chain '
+                            + (getFormattedOptionPrice('39256_156676') || '')
+                                            ">3 Key Chain + ₹300.00</option>
+
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </form>
+
+                        <div class="flex flex-row justify-between">
+                        </div>
+
+                        <div class="flex items-center my-4 mb-10 ml-auto">
+
+                            <label for="qty[2013]"
+                                class="inline-block mr-3 font-medium md:mr-0 md:basis-1/4 lg:basis-1/5 xl:basis-1/6">
+                                Quantity </label>
+                            <div x-data="initQtyField()" class>
+                                <div class="mr-2 flex">
+                                    <button aria-label="qty-decrement"
+                                        class="text-2xl border border-gainsboro w-12 h-12 grid place-items-center hover:cursor-pointer">-</button>
+                                    <input name="qty"
+                                        form="product_addtocart_form"
+                                        type="number" pattern="[0-9]{0,5}"
+                                        inputmode="numeric" min="1"
+                                        max="10000" :value="qty"
+                                        class=" px-2 border py-2 w-20 inline-block border-gray-300 text-center hover:cursor-pointer"
+                                        x-model.number="qty">
+                                    <button aria-label="qty-increment"
+                                        class="text-2xl border border-gainsboro font-medium grid place-items-center w-12 h-12 hover:cursor-pointer"
+                                        @click="qty = qty+1">+</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div x-data="initPincodeChecker()" class="my-4">
+                            <div class="flex items-center">
+                                <h6
+                                    class="mr-3 2xl:mr-0 md:basis-1/4 lg:basis-1/5 lg:mr-0 xl:basis-1/6">Availability</h6>
+                                <div class="flex items-center">
+                                    <input type="text"
+                                        class="w-full lg:h-12 px-3 lg:min-w-150to250 border border-light-silver md:mr-2 h-12 placeholder:italic focus:ring-0 focus:border-black"
+                                        title="pincode" maxlength="10"
+                                        id="pincode"
+                                        placeholder="Enter Pincode"
+                                        name="pincode"
+                                        @keyup.enter="checkPincode()">
+                                    <button @click="checkPincode()"
+                                        type="button" id="pincode_check"
+                                        class="border border-light-silver w-12 h-12 grid place-items-center"><span
+                                            class="transform rotate-90 text-secondary"><svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                fill="none"
+                                                viewBox="0 0 24 24"
+                                                stroke-width="2"
+                                                stroke="currentColor"
+                                                width="24" height="24"
+                                                role="img">
+                                                <path stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                    d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+                                                <title>paper-airplane</title></svg>
+                                            <span></span></span></button>
+                                </div>
+                            </div>
+                            <div id="result"
+                                class="relative mb-5 mt-1 md:left-1/4 lg:left-1/5 xl:left-1/6">
+                            </div>
+                            <div
+                                @configurable-selection-changed.window="selectedProductId = $event.detail.productIndex"></div>
+                        </div>
+
+                        <div class="flex my-4">
+                        </div>
+
+                        <div
+                            class="w-full p-3 fixed bottom-0 border-t left-0 z-10 bg-white flex md:static md:border-0 md:w-11/12 lg:max-w-[535px]">
+                            <!-- BLOCK product.info.buynow -->
+
+                            <button
+                                class="border mr-3 w-1/2 h-10 font-medium border-black uppercase lg:h-12 lg:min-w-150to250 cursor-pointer">
+
+                                <span>Buy Now</span>
+
+                            </button>
+                            <!-- /BLOCK product.info.buynow -->
+                            <button
+                                class="w-1/2 h-10 bg-red-500 text-white uppercase lg:h-12 cursor-pointer">
+
+                                <span>Add to Cart </span>
+                            </button>
+
+                        </div>
+
+                        <div class="flex my-4 justify-end">
+                        </div>
+
+                        <style type="text/css">
+                                    </style>
+
+                        <div class="maindiv-social flex">
+                            <h6 class="text-14to16 font-bold m-4">Share</h6>
+                            <ul
+                                class="rrssb-buttons flex items-center gap-4">
+
+                                <li
+                                    class="rrssb-facebook h-8 w-8 p-2 bg-secondary rounded-full">
+                                    <a
+                                        href="https://www.facebook.com/sharer/sharer.php?u=https://www.haldirams.com/modak-haldirams-3.html"
+                                        target="_blank">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            class="fill-white"
+                                            viewBox="0 0 29 29"><path
+                                                d="M26.4 0H2.6C1.714 0 0 1.715 0 2.6v23.8c0 .884 1.715 2.6 2.6 2.6h12.393V17.988h-3.996v-3.98h3.997v-3.062c0-3.746 2.835-5.97 6.177-5.97 1.6 0 2.444.173 2.845.226v3.792H21.18c-1.817 0-2.156.9-2.156 2.168v2.847h5.045l-.66 3.978h-4.386V29H26.4c.884 0 2.6-1.716 2.6-2.6V2.6c0-.885-1.716-2.6-2.6-2.6z"></path></svg>
+
+                                    </a>
+                                </li>
+
+                                <li
+                                    class="rrssb-twitter h-8 w-8 p-2 bg-secondary rounded-full">
+                                    <a
+                                        href="https://twitter.com/intent/tweet?url=https://www.haldirams.com/modak-haldirams-3.html&amp;text=Kesar Modak"
+                                        target="_blank">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            class="fill-white"
+                                            viewBox="0 0 28 28"><path
+                                                d="M24.253 8.756C24.69 17.08 18.297 24.182 9.97 24.62a15.093 15.093 0 0 1-8.86-2.32c2.702.18 5.375-.648 7.507-2.32a5.417 5.417 0 0 1-4.49-3.64c.802.13 1.62.077 2.4-.154a5.416 5.416 0 0 1-4.412-5.11 5.43 5.43 0 0 0 2.168.387A5.416 5.416 0 0 1 2.89 4.498a15.09 15.09 0 0 0 10.913 5.573 5.185 5.185 0 0 1 3.434-6.48 5.18 5.18 0 0 1 5.546 1.682 9.076 9.076 0 0 0 3.33-1.317 5.038 5.038 0 0 1-2.4 2.942 9.068 9.068 0 0 0 3.02-.85 5.05 5.05 0 0 1-2.48 2.71z"></path></svg>
+                                    </a>
+                                </li>
+                                <li
+                                    class="rrssb-whatsapp h-8 w-8 p-2 bg-secondary rounded-full">
+                                    <a
+                                        href="https://web.whatsapp.com/send?text=https://www.haldirams.com/modak-haldirams-3.html | Kesar+Modak"
+                                        data-action="share/whatsapp/share"
+                                        target="_blank">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            class="fill-white"
+                                            viewBox="0 0 90 90"><path
+                                                d="M90 43.84c0 24.214-19.78 43.842-44.182 43.842a44.256 44.256 0 0 1-21.357-5.455L0 90l7.975-23.522a43.38 43.38 0 0 1-6.34-22.637C1.635 19.63 21.415 0 45.818 0 70.223 0 90 19.628 90 43.84zM45.818 6.983c-20.484 0-37.146 16.535-37.146 36.86 0 8.064 2.63 15.533 7.076 21.61l-4.64 13.688 14.274-4.537A37.122 37.122 0 0 0 45.82 80.7c20.48 0 37.145-16.533 37.145-36.857S66.3 6.983 45.818 6.983zm22.31 46.956c-.272-.447-.993-.717-2.075-1.254-1.084-.537-6.41-3.138-7.4-3.495-.993-.36-1.717-.54-2.438.536-.72 1.076-2.797 3.495-3.43 4.212-.632.72-1.263.81-2.347.27-1.082-.536-4.57-1.672-8.708-5.332-3.22-2.848-5.393-6.364-6.025-7.44-.63-1.076-.066-1.657.475-2.192.488-.482 1.084-1.255 1.625-1.882.543-.628.723-1.075 1.082-1.793.363-.718.182-1.345-.09-1.884-.27-.537-2.438-5.825-3.34-7.977-.902-2.15-1.803-1.793-2.436-1.793-.63 0-1.353-.09-2.075-.09-.722 0-1.896.27-2.89 1.344-.99 1.077-3.788 3.677-3.788 8.964 0 5.288 3.88 10.397 4.422 11.113.54.716 7.49 11.92 18.5 16.223 11.01 4.3 11.01 2.866 12.996 2.686 1.984-.18 6.406-2.6 7.312-5.107.9-2.513.9-4.664.63-5.112z"></path></svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="bg-[#f7f7f7]">
+            <!-- subscribe section -->
+            <section
+                class="bg-[#fac44b] py-10 flex justify-center gap-10 items-center">
+                <div class="flex items-center gap-4">
+                    <img src="./image/telegram.svg" alt class="w-10 h-10">
+                    <div>
+                        <h1 class="text-2xl font-medium">SIGN UP FOR
+                            NEWSLETTER</h1>
+                        <p>Want To Get Latest Updates ! Sign Up For Free.</p>
+                    </div>
+                </div>
+                <div class="flex items-center">
+                    <input type="text"
+                        class="py-2 px-5 placeholder:text-sm placeholder:text-slate-900 placeholder:italic placeholder:font-medium"
+                        placeholder="Inter your emaill address">
+                    <button
+                        class="py-2 px-6  bg-red-600 text-white">Subscribe</button>
+                </div>
+            </section>
+            <!-- footer link -->
+            <section class="w-[90%] mx-auto text-[15px]">
+                <div class="grid grid-cols-10 py-10">
+                    <div class="col-span-2 space-y-2">
+                        <h1 class="text-lg font-bold">QUICK LINKS</h1>
+                        <p><a href="#">About Us</a></p>
+                        <p><a href="#">Our Process</a></p>
+                        <p> <a href="#">CSR Activities</a></p>
+                        <p> <a href="#">Recipes</a></p>
+                        <p><a href="#">Offices</a></p>
+                        <p><a href="#">Retail Stores & Restaurants</a></p>
+                        <p><a href="#">Store Locator</a></p>
+                    </div>
+                    <div class="col-span-2 space-y-2">
+                        <h1 class="text-lg font-bold">OUR SERVICES</h1>
+                        <p> <a href="#">Bulk Orders</a></p>
+                        <p> <a href="#">Careers</a></p>
+                        <p><a href="#">Contact Us</a></p>
+                        <hr class="w-1/2">
+                        <h1 class="text-lg font-bold">VIDEOS</h1>
+                        <p> <a href="#">Brand Videos</a></p>
+                        <p> <a href="#">Recipe Videos</a></p>
+                        <hr class="w-1/2">
+                    </div>
+                    <div class="col-span-2 space-y-2">
+                        <h1 class="text-lg font-bold"> OUR POLICES</h1>
+                        <p> <a href="#">Cancellation & Refund</a></p>
+                        <p> <a href="#">Shipping</a></p>
+                        <p><a href="#">Payments</a></p>
+                        <p><a href="#">Terms & Conditions</a></p>
+                        <p><a href="#">Privacy Policy</a></p>
+                        <p> <a href="#">Quality Assurance</a></p>
+                        <p><a href="#"> Certification & Accolades</a></p>
+                    </div>
+                    <div class="col-span-3 space-y-2">
+                        <h1 class="text-lg font-bold">REACH US</h1>
+                        <p class="font-bold">Email :
+                            <span
+                                class="font-normal">support@haldirams.com</span></p>
+                        <p class="font-bold"> Call : <span
+                                class="font-normal">+91
+                                712-2779451</span></p>
+                        <p class="font-bold">Customer Care Timings :
+                            <span
+                                class="font-normal">10:00
+                                AM To 6:00
+                                PM</span></p>
+
+                        <div class="pt-4">
+                            <h1 class="text-lg font-bold pb-4">Payment Secured
+                                By</h1>
+                            <img
+                                src="https://www.haldirams.com/media/wysiwyg/Footer_Image_new_desk.jpg"
+                                alt>
+                        </div>
+                    </div>
+                    <div class="col-span-1 pl-2 space-y-2">
+                        <h1 class="text-lg font-bold">Follow Us</h1>
+                        <p> <a href="#">Facebook</a></p>
+                        <p> <a href="#">Instagram</a></p>
+                        <p> <a href="#">Twitter</a></p>
+                        <p> <a href="#">YouTube</a></p>
+                        <p> <a href="#">Pinterest</a></p>
+                    </div>
+                </div>
+                <hr>
+                <h2 class="text-center py-7 text-sm">Copyright © 2024
+                    Haldiram's
+                    India
+                    Pvt
+                    Ltd <span
+                        class="px-6">|</span>
+                    Powered By
+                    Graas</h2>
+            </section>
+        </footer>
+    </body>
+</html>
