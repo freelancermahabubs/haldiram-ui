@@ -10,7 +10,7 @@
     <body>
         <header class="sticky top-0 left-0 right-0 z-50 mb-4 bg-white">
             <!-- heading title -->
-            <div class="w-full bg-[#FAC44B] h-7">
+            <div class="w-full hidden lg:block bg-[#FAC44B] h-7">
                 <div
                     class="w-[90%] mx-auto flex gap-3 h-full items-center justify-between">
                     <div class="w-[75%]">
@@ -37,7 +37,10 @@
             <!-- headin image and searchbar -->
             <div
                 class="flex items-center justify-between w-[90%] mx-auto py-1">
-                <div class="flex items-center bg-[#F7F7F7] pl-5">
+                <button class=" lg:hidden">
+                    <img class="w-8 h-8" src="image/menu-svgrepo-com.svg" alt>
+                </button>
+                <div class="hidden lg:flex items-center bg-[#F7F7F7] pl-5">
                     <input type="text" placeholder="search here...."
                         class="outline-none bg-[#F7F7F7]">
                     <button class="bg-red-600 py-2 px-3"><img class="w-7 h-7"
@@ -46,15 +49,34 @@
                 </div>
                 <a href="/"><img src="image/logo.svg" alt></a>
                 <div class="flex items-center gap-4">
-                    <a href="/login.html"><img class="w-8 h-8"
+                    <a href="/login.html"><img class="w-8 h-8 hidden lg:block"
                             src="image/person.svg" alt></a>
                     <img class="w-8 h-8" src="image/love.svg" alt>
+                    <img class="w-8 h-8 lg:hidden"
+                        src="image/search-alt-1-svgrepo-com.svg" alt>
                     <img class="w-8 h-8" src="image/shop.svg" alt>
+                </div>
+            </div>
+            <!-- mobile title -->
+            <div class=" lg:hidden w-full bg-[#FAC44B] h-7">
+                <div
+                    class="w-[90%] mx-auto flex gap-3 h-full items-center justify-between">
+                    <marquee class="font-bold text-sm">Delivering PAN India &
+                        Free
+                        Shipping across India on Orders above ₹500 | <span
+                            class="font-normal"> Estimated
+                            Standard Delivery Timeline of 3-5 Working Days,
+                            Though
+                            Delivery Time May Vary Depending On Pin Code
+                            CAUTION
+                            -
+                            Beware of Friday</span></marquee>
+
                 </div>
             </div>
             <!-- navbar -->
             <nav
-                class="w-full bg-[#FAC44B]   uppercase text-base">
+                class="hidden lg:block w-full bg-[#FAC44B]   uppercase text-base">
                 <div class="flex items-center h-9 py-2 w-[90%] gap-10 mx-auto">
 
                     <a href="/ganeshSpacial.html">Ganesha Special</a>
@@ -65,7 +87,7 @@
         </header>
         <main class="w-[90%] mx-auto mb-10">
             <h1
-                class="text-black  font-medium  text-3xl text-center">
+                class="text-black  font-medium  text-xl mb-5 lg:text-3xl text-center">
                 <span>Create New Customer Account</span> </h1>
             <div class="block container ">
                 <div
@@ -410,13 +432,15 @@
         <footer class="bg-[#f7f7f7]">
             <!-- subscribe section -->
             <section
-                class="bg-[#fac44b] py-10 flex justify-center gap-10 items-center">
+                class="bg-[#fac44b] py-10 flex flex-col lg:flex-row justify-center gap-5 lg:gap-10 items-center">
                 <div class="flex items-center gap-4">
-                    <img src="./image/telegram.svg" alt class="w-10 h-10">
-                    <div>
-                        <h1 class="text-2xl font-medium">SIGN UP FOR
+                    <img src="./image/telegram.svg" alt
+                        class="w-10 h-10 hidden lg:block">
+                    <div class="text-center lg:text-left">
+                        <h1 class="text-xl lg:text-2xl font-medium">SIGN UP FOR
                             NEWSLETTER</h1>
-                        <p>Want To Get Latest Updates ! Sign Up For Free.</p>
+                        <p class="text-sm lg:text-base">Want To Get Latest
+                            Updates ! Sign Up For Free.</p>
                     </div>
                 </div>
                 <div class="flex items-center">
@@ -429,8 +453,8 @@
             </section>
             <!-- footer link -->
             <section class="w-[90%] mx-auto text-[15px]">
-                <div class="grid grid-cols-10 py-10">
-                    <div class="col-span-2 space-y-2">
+                <div class="grid grid-cols-1 lg:grid-cols-10 py-10">
+                    <div class="lg:col-span-2 space-y-2">
                         <h1 class="text-lg font-bold">QUICK LINKS</h1>
                         <p><a href="#">About Us</a></p>
                         <p><a href="#">Our Process</a></p>
@@ -440,7 +464,7 @@
                         <p><a href="#">Retail Stores & Restaurants</a></p>
                         <p><a href="#">Store Locator</a></p>
                     </div>
-                    <div class="col-span-2 space-y-2">
+                    <div class="lg:col-span-2 space-y-2">
                         <h1 class="text-lg font-bold">OUR SERVICES</h1>
                         <p> <a href="#">Bulk Orders</a></p>
                         <p> <a href="#">Careers</a></p>
@@ -451,7 +475,7 @@
                         <p> <a href="#">Recipe Videos</a></p>
                         <hr class="w-1/2">
                     </div>
-                    <div class="col-span-2 space-y-2">
+                    <div class="lg:col-span-2 space-y-2">
                         <h1 class="text-lg font-bold"> OUR POLICES</h1>
                         <p> <a href="#">Cancellation & Refund</a></p>
                         <p> <a href="#">Shipping</a></p>
@@ -461,7 +485,7 @@
                         <p> <a href="#">Quality Assurance</a></p>
                         <p><a href="#"> Certification & Accolades</a></p>
                     </div>
-                    <div class="col-span-3 space-y-2">
+                    <div class="lg:col-span-3 space-y-2">
                         <h1 class="text-lg font-bold">REACH US</h1>
                         <p class="font-bold">Email :
                             <span
@@ -483,7 +507,7 @@
                                 alt>
                         </div>
                     </div>
-                    <div class="col-span-1 pl-2 space-y-2">
+                    <div class="lg:col-span-1 pl-2 space-y-2">
                         <h1 class="text-lg font-bold">Follow Us</h1>
                         <p> <a href="#">Facebook</a></p>
                         <p> <a href="#">Instagram</a></p>
