@@ -45,33 +45,76 @@
       </div>
       <!-- headin image and searchbar -->
       <div class="flex items-center justify-between w-[90%] mx-auto py-1">
-        <button class="lg:hidden">
-          <img class="w-8 h-8" src="image/menu-svgrepo-com.svg" alt />
+        <!-- Menu Button for Mobile -->
+        <button id="menu-toggle" class="lg:hidden">
+          <img class="w-8 h-8" src="image/menu-svgrepo-com.svg" alt="Menu" />
         </button>
+
+        <!-- Search Bar (hidden on small screens) -->
         <div class="hidden lg:flex items-center bg-[#F7F7F7] pl-5">
           <input
             type="text"
-            placeholder="search here...."
+            placeholder="Search here...."
             class="outline-none bg-[#F7F7F7]"
           />
           <button class="bg-red-600 py-2 px-3">
-            <img class="w-7 h-7" src="image/search.svg" alt />
+            <img class="w-7 h-7" src="image/search.svg" alt="Search" />
           </button>
         </div>
-        <a href="/"><img src="image/logo.svg" alt /></a>
+
+        <!-- Logo -->
+        <a href="/">
+          <img src="image/logo.svg" alt="Logo" />
+        </a>
+
+        <!-- Icons -->
         <div class="flex items-center gap-4">
-          <a href="/login.html"
-            ><img class="w-8 h-8 hidden lg:block" src="image/person.svg" alt
-          /></a>
-          <img class="w-8 h-8" src="image/love.svg" alt />
+          <a href="/login.html">
+            <img
+              class="w-8 h-8 hidden lg:block"
+              src="image/person.svg"
+              alt="Login"
+            />
+          </a>
+          <img class="w-8 h-8" src="image/love.svg" alt="Wishlist" />
           <img
             class="w-8 h-8 lg:hidden"
             src="image/search-alt-1-svgrepo-com.svg"
-            alt
+            alt="Search Mobile"
           />
-          <img class="w-8 h-8" src="image/shop.svg" alt />
+          <img class="w-8 h-8" src="image/shop.svg" alt="Cart" />
         </div>
       </div>
+
+      <!-- Collapsible Menu Items -->
+      <nav
+        id="mobile-menu"
+        class="hidden lg:hidden bg-white absolute top-16 left-0 w-full shadow-lg z-10"
+      >
+        <ul class="flex flex-col lg:flex-row lg:gap-4 p-4">
+          <li>
+            <a href="#" class="block py-2 px-4 text-gray-700"
+              >Festive Special</a
+            >
+          </li>
+          <li><a href="#" class="block py-2 px-4 text-gray-700">Gifting</a></li>
+          <li><a href="#" class="block py-2 px-4 text-gray-700">Sweets</a></li>
+          <li>
+            <a href="#" class="block py-2 px-4 text-gray-700">Savories</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 px-4 text-gray-700">Dry Fruits</a>
+          </li>
+          <li><a href="#" class="block py-2 px-4 text-gray-700">Cookies</a></li>
+          <li>
+            <a href="#" class="block py-2 px-4 text-gray-700">Ready to Eat</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 px-4 text-gray-700">Fresh Pops</a>
+          </li>
+        </ul>
+      </nav>
+
       <!-- mobile title -->
       <div class="lg:hidden w-full bg-[#FAC44B] h-7">
         <div
@@ -93,12 +136,37 @@
         <div class="flex items-center h-9 py-2 w-[90%] gap-10 mx-auto">
           <a href="/ganeshSpacial.html">Ganesha Special</a>
           <a href="/">Gifting</a>
-          <a href="/" id="menu-sweets">Sweets</a>
+          <div class="relative group">
+            <a href="#" class="cursor-pointer" id="menu-sweets">Sweets</a>
+            <!-- Dropdown -->
+            <ul
+              class="absolute hidden group-hover:block top-full mt-2 bg-white shadow-lg text-black uppercase"
+            >
+              <li class="relative px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                Dockyard Contractor
+              </li>
+              <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                Shipyard
+              </li>
+              <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                Housing
+              </li>
+              <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                Supplier
+              </li>
+              <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                Exporter
+              </li>
+              <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                Importer
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
     </header>
     <main>
-      <div class="modal-sweets mt-10" id="modal-sweets">
+      <!-- <div class="modal-sweets mt-10" id="modal-sweets">
         <div class="modal-content-sweets">
           <div class="modal-section">
             <ul>
@@ -118,7 +186,7 @@
             <img src="tin-sweets.jpg" alt="Tin Sweets" class="modal-img" />
           </div>
         </div>
-      </div>
+      </div> -->
 
       <!--========== Banner Section Area Start  ===========-->
       <section class="banner_section_area">
@@ -437,5 +505,15 @@
     </script>
 
     <script src="script.js"></script>
+    <!-- Internal JavaScript -->
+    <script>
+      const menuToggle = document.getElementById("menu-toggle");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      menuToggle.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+        mobileMenu.classList.toggle("block");
+      });
+    </script>
   </body>
 </html>

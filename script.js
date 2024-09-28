@@ -1,6 +1,6 @@
 // Get the menu item and modal elements
-var menuSweets = document.getElementById('menu-sweets');
-var modalSweets = document.getElementById('modal-sweets');
+var menuSweets = document.getElementById("menu-sweets");
+var modalSweets = document.getElementById("modal-sweets");
 
 // Function to show the modal
 function showModal() {
@@ -13,11 +13,19 @@ function hideModal() {
 }
 
 // When the user hovers over the menu item, show the modal
-menuSweets.addEventListener('mouseenter', showModal);
+menuSweets.addEventListener("mouseenter", showModal);
 
 // When the user hovers over the modal itself, keep it open
-modalSweets.addEventListener('mouseenter', showModal);
+modalSweets.addEventListener("mouseenter", showModal);
 
 // When the user moves the mouse away from both the menu item and the modal, hide the modal
-menuSweets.addEventListener('mouseleave', hideModal);
-modalSweets.addEventListener('mouseleave', hideModal);
+menuSweets.addEventListener("mouseleave", hideModal);
+modalSweets.addEventListener("mouseleave", hideModal);
+
+// const menuToggle = document.getElementById("menu-toggle");
+// const mobileMenu = document.getElementById("mobile-menu");
+
+// menuToggle.addEventListener("click", () => {
+//   mobileMenu.classList.toggle("hidden");
+//   mobileMenu.classList.toggle("block");
+// });
